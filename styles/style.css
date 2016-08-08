@@ -1,0 +1,316 @@
+/*1.  CSS RESET*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*2. CLEARFIX*/
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/*3. BORDER BOX*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*STYLES*/
+
+header{
+	background-color: #f7b731;
+	color: white;
+	padding: 10px;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 5;
+	display: block;
+}
+
+.googleMap{
+	height: calc(100vh - 60px);
+	width: 100%;
+	display: fixed;
+}
+
+section.mapHeader{
+	width: 100%;
+	height: 40px;
+	background-color: #f7b731;
+}
+
+.title p{
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	padding-top: 10px;
+}
+
+section.mapFooter{
+	width: 100%;
+	height: 20px;
+	background-color: #f7b731;
+}
+
+.mapBorder{
+	border-radius: 20px;
+	border: 2px solid black;
+	margin-left: 5px;
+	margin-right: 5px;
+	position: relative;
+	z-index: 4;
+}
+
+.mapBackground{
+	background-color: #f7b731;
+}
+
+input[type=submit]{
+	background:none;
+	  border:none;
+	position: absolute;
+	top: 522px;
+	left: calc(50% - 129px);
+	background-color: rebeccapurple;
+	cursor: pointer;
+	width: 257px;
+	height: 50px;
+	color: white;
+	font-size: 15px;
+	border-radius: 6px;
+	outline: none;
+	transition: 0.15s ease;
+}
+
+input[type=submit]:hover{
+	-webkit-box-shadow: inset 0px -3px 8px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -3px 8px -4px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -3px 8px -4px rgba(0,0,0,0.75);
+}
+
+input[type=submit]:active{
+	-webkit-box-shadow: inset 0px 3px 8px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 3px 8px -4px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 3px 8px -4px rgba(0,0,0,0.75);
+}
+
+
+h1{
+	font-family: 'Trocchi', serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+h2{
+	font-family: 'Trocchi', serif;
+	font-size: 14px;
+	position: relative;
+	top: -42px;
+	left: 49px;
+	transform: rotate(-16deg);
+}
+
+.title{
+	width: 350px;
+/*	margin: 0 auto;*/
+	position: absolute;
+	left: calc(50% - 168px);
+	top: 20px;
+	z-index: 2;
+}
+
+main{
+	posabs
+}
+
+header img{
+	max-width: 400px;
+	position: absolute;
+	top: 98px;
+	left: calc(50% - 200px);
+}
+
+.headerText h4{
+	color: black;
+	font-family: 'Trocchi', serif;
+	font-size: 18px;
+	position: absolute;
+	top: 16px;
+	left: 20px;
+}
+
+.headerText{
+	position: absolute;
+	left: 13px;
+	top: 2px;
+	width: 200px;
+}
+
+.headerText h5{
+	font-size: 15px;
+	transform: rotate(-22deg);
+	position: absolute;
+	top: 3px;
+	left: 5px;
+}
+
+.headertextLeft{
+	font-family: 'Trocchi', serif;
+	position: absolute;
+	top: 20px;
+	right: 16px;
+	display: flex;
+	flex-direction: row;
+	width: 212px;
+	justify-content: space-between;
+	font-size: 14px;
+}
+
+.headertextLeft a{
+	text-decoration: none;
+	font-size: 15px;
+	margin-left: 8px;
+	color: black;
+}
+
+.headertextLeft p{
+	font-size: 15px;
+	color: black;
+}
+
+.headertextLeft span{
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+.footerText{
+	text-align: center;
+	font-size: 13px;
+}
+
+
+.cornerfix{
+	width: 30px;
+	height: 30px;
+	/*background-color: blue;*/
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	z-index: 4;
+}
+
+.cornerfix2{
+	width: 30px;
+	height: 30px;
+	/*background-color: blue;*/
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	z-index: 4;
+	transform: rotate(90deg);
+}
+
+.cornerfix3{
+	width: 30px;
+	height: 30px;
+	/*background-color: blue;*/
+	position: absolute;
+	bottom: -2px;
+	right: -2px;
+	z-index: 4;
+	transform: rotate(180deg);
+}
+
+.cornerfix4{
+	width: 30px;
+	height: 30px;
+	/*background-color: blue;*/
+	position: absolute;
+	bottom: -2px;
+	left: -2px;
+	z-index: 4;
+	transform: rotate(270deg);
+}
+
+.innerCornerFix{
+	width: 100%;
+	height: 100%;
+	border-radius: 18px 0px 0px 0px;
+	/*background-color: green;*/
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	z-index: 5;
+}
+
+.yellowPatch{
+	background-color: #f7b731;
+	width: 10px;
+	height: 8px;
+	position: absolute;
+	top: -2px;
+	left: -3px;
+	z-index: 4;
+	transform: rotate(45deg);
+}
+
+#content{
+	font-family: serif;
+	font-weight: bold;
+	padding: 2px;
+	text-align: center;
+}
+
+#content p{
+	padding-bottom: 5px;
+}
+
+#content i{
+	padding-bottom: 5px;
+}
+
+#content h6{
+	color: #2C3C2D;
+}

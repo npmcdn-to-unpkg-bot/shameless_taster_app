@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="styles/style.css">
+	<meta charset="UTF-8">
+	<title>The Shameless Taster</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">
+
+	<!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
+
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+
+    <script src="https://use.fontawesome.com/6005149337.js"></script>
+
+</head>
+<body>
+	<header>
+		<main>
+			<div class="title">
+				<h2>The</h2>
+				<h1>Shameless Taster</h1>
+				<p>A resource for those who abuse free liquor samples</p>
+			</div>
+			<img src="images/shamelessBG.png" alt="an 1800s etching of a gentleman downing a glass in front of a young woman">
+
+			<a href="#map">
+				<form action="">
+					<input type="submit" value="SHOW ME TO THE FREE SAMPLES!">
+				</form>
+			</a>
+		</main>
+
+	</header>
+
+
+	<section class="mapHeader">
+		<div class="headerText">
+			<h5>The</h5>
+			<h4>Shameless Taster</h4>
+		</div>
+		<div class="headertextLeft">
+			<h3><span>made by </span>Greg McKenzie</h3>
+			<p>
+				<a href="https://twitter.com/GregaMcKenzie"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+				<a href="https://ca.linkedin.com/in/greg-mckenzie-38416914"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+
+			</p>
+		</div>
+	</section>
+
+	<section class="mapBackground">
+		<div class="mapBorder">
+			<div class="cornerfix">
+
+				<div class="innerCornerFix"></div>
+				<div class="yellowPatch"></div>
+			</div>
+
+			<div class="cornerfix2">
+
+				<div class="innerCornerFix"></div>
+				<div class="yellowPatch"></div>
+			</div>
+
+			<div class="cornerfix3">
+
+				<div class="innerCornerFix"></div>
+				<div class="yellowPatch"></div>
+			</div>
+
+			<div class="cornerfix4">
+
+				<div class="innerCornerFix"></div>
+				<div class="yellowPatch"></div>
+			</div>
+
+			<div class="googleMap" id="map"></div>
+		</div>
+	</section>
+
+	<section class="mapFooter">
+		<div class="footerText">
+			<p>Please taste responsibly</p>
+		</div>
+	</section>
+	
+	<!-- <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script> -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="js/javascript.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJMTc_5PkuwxHMdPr39Xbc6qMQCju44a8&callback=initMap"
+	    async defer></script>
+
+	
+</body>
+
+
+
+</html>
